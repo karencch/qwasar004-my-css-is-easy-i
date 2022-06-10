@@ -1,0 +1,56 @@
+
+.flex-container {
+    background-color: yellow; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.content-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    align-items: stretch;
+}
+
+.flex-header {
+    background-color: #00B7EB;
+    flex-grow: 1; 
+    padding: 10% 0;
+}
+
+.flex-hero {
+    background-color: #FF0000;
+    flex-grow: 1; 
+    padding: 10% 0;
+}
+
+.flex-content {
+    background-color: #00FF00;
+    flex-grow: 2;
+    padding: 10% 0;
+}
+
+.flex-sidebar {
+    background-color: #800080;
+    flex-grow: 2;
+    padding: 10% 0;
+}
+
+.flex-footer {
+    background-color: #444444;
+    flex-grow: 1; 
+    padding: 10% 0;
+}
+
+/* For screens bigger than mobile, breakpoint 768px: */
+@media (min-width: 768px){
+    .content-sidebar {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+    }
+}
